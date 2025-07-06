@@ -13,12 +13,33 @@ const add = (a, b) => {
   return a + b;
 };
 
+const names = ["Phone Nyo", "Sithu", "Tharaphi"]; // Array
+const numbers = [1, 2, 3, 4, 5]; // Array
+
 btn.onclick = () => {
-  if (p.style.color === "gold") {
-    p.style.color = "red";
-  } else {
-    p.style.color = "gold";
+  // if (p.style.color !== "gold") {
+  //   p.style.color = "gold";
+  // } else {
+  //   p.style.color = "red";
+  // }
+
+  switch (p.style.color) {
+    case "gold":
+      p.style.color = "red";
+      break;
+    case "red":
+      p.style.color = "gold";
+      break;
+    default:
+      p.style.color = "gold";
+      break;
   }
+
+  // for (let i = 0; i < array.length; index++) {
+  //   const element = array[index];
+
+  // }
+
   changeText("Let's go!");
   //const result = add(2, 3);
   p2.innerText = add(2, 3);
