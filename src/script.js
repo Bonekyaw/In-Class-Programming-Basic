@@ -13,10 +13,51 @@ const add = (a, b) => {
   return a + b;
 };
 
+// Array
 const names = ["Phone Nyo", "Sithu", "Tharaphi"]; // Array
 const numbers = [1, 2, 3, 4, 5]; // Array
+const persons = [
+  ["Phone Nyo", 20],
+  ["Sithu", 21],
+  ["Tharaphi", 22],
+]; // Array of Arrays
+
+// Object
+const user = {
+  name: "Phone Nyo",
+  age: 20,
+  address: "Yangon",
+  isStudent: true,
+  hobbies: ["Reading", "Coding", "Gaming"],
+  greet: function () {
+    console.log("Hello, my name is " + this.name);
+  },
+};
+
+const users = [
+  {
+    name: "Phone Nyo",
+    age: 20,
+  },
+  {
+    name: "Sithu",
+    age: 21,
+  },
+];
 
 btn.onclick = () => {
+  // names.forEach((name) => {
+  //   let p = document.createElement("p"); // <p></p>
+  //   p.innerText = "Hello " + name; // <p>Hello Phone Nyo</p>
+  //   document.body.appendChild(p); // Append to body
+  // });
+
+  for (let index = 0; index < names.length; index++) {
+    let p = document.createElement("p"); // <p></p>
+    p.innerText = "Hello " + names[index]; // <p>Hello Phone Nyo</p>
+    document.body.appendChild(p); // Append to body
+  }
+
   // if (p.style.color !== "gold") {
   //   p.style.color = "gold";
   // } else {
