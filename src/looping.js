@@ -6,6 +6,8 @@ const btn = document.getElementById("btn");
 
 // Array
 const names = ["Phone Nyo", "Sithu", "Tharaphi"];
+const numbers = [1, 2, 3, 4, 5]; // numbers[0]
+const mixed = ["Phone Nyo", 20, true, ["sport", "dancing"], undefined]; // mixed[0]
 
 btn.onclick = () => {
   names.forEach((name) => {

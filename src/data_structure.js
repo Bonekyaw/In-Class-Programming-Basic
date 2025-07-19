@@ -43,4 +43,7 @@ btn.onclick = () => {
     p.innerText = "Hello " + name; // <p>Hello Phone Nyo</p>
     document.body.appendChild(p); // Append to body
   });
+
+  // p.innerText = person.name + " lives in " + person.address;
+  // p.innerText = `${person.name} lives in ${person.address}`;
 };
