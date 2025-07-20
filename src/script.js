@@ -22,21 +22,18 @@ class User {
   }
 }
 
+class Customer extends User {
+  greet() {
+    return "Hello " + this.name; // Accessing the public field from User class
+  }
+}
+
 const user = new User("Phone Nyo", 20);
 const user2 = new User("Sithu", 21);
 
-const person = {
-  name: "Phone Nyo",
-  age: 20,
-  greet: function () {
-    return "Hello, my name is " + this.name;
-  },
-};
+const customer = new Customer("Phone Nyo", 20);
 
 btn.onclick = () => {
   p.innerText = user.greet(); // Hello, my name is Phone Nyo
-  p2.innerText = user.name; // Phone Nyo
-
-  // p.innerText = person.greet(); // Hello, my name is Phone Nyo
-  // p2.innerText = person.name; // Phone Nyo
+  p2.innerText = customer.greet(); // Phone Nyo
 };

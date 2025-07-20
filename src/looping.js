@@ -10,6 +10,9 @@ const numbers = [1, 2, 3, 4, 5]; // numbers[0]
 const mixed = ["Phone Nyo", 20, true, ["sport", "dancing"], undefined]; // mixed[0]
 
 btn.onclick = () => {
+  // names.push("Naing Naing Lin");
+  // names.splice(1, 1);
+
   names.forEach((name) => {
     let p = document.createElement("p"); // <p></p>
     p.innerText = "Hello " + name; // <p>Hello Phone Nyo</p>
